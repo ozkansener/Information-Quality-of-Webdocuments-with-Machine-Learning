@@ -1,4 +1,4 @@
-# Information Quality of Webdocuments with Machine Learning
+# Automatically Assessing the Information Quality of Webdocuments with Machine Learning
 
 Read the research paper:
 [Research Paper](https://github.com/ozkansener/Information-Quality-of-Webdocuments-with-Machine-Learning/blob/master/Researchpaper.pdf "Research Paper")
