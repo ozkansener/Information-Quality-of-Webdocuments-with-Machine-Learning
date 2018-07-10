@@ -1,0 +1,427 @@
+[2017-12-20 19:59:21 +0000] [6387] [INFO] Starting gunicorn 19.7.1
+[2017-12-20 19:59:21 +0000] [6387] [INFO] Listening at: http://0.0.0.0:5000 (6387)
+[2017-12-20 19:59:21 +0000] [6387] [INFO] Using worker: sync
+[2017-12-20 19:59:21 +0000] [6390] [INFO] Booting worker with pid: 6390
+[2017-12-20 20:03:08 +0000] [6387] [INFO] Handling signal: int
+[2017-12-20 20:03:08 +0000] [6390] [INFO] Worker exiting (pid: 6390)
+[2017-12-20 20:03:08 +0000] [6387] [INFO] Shutting down: Master
+[2017-12-20 21:00:13 +0000] [6729] [INFO] Starting gunicorn 19.7.1
+[2017-12-20 21:00:13 +0000] [6729] [INFO] Listening at: http://0.0.0.0:5000 (6729)
+[2017-12-20 21:00:13 +0000] [6729] [INFO] Using worker: sync
+[2017-12-20 21:00:13 +0000] [6732] [INFO] Booting worker with pid: 6732
+[2017-12-20 21:01:54,522] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 21:02:28,781] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 21:14:35,354] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 21:33:21,708] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 21:36:46,431] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 21:44:55,933] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 21:47:47,321] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 149, in get_term
+    dff = ((applyParallel(df.groupby(df.index), tmpFunc)))
+  File "/home/qupid/atest/app.py", line 131, in applyParallel
+    return pd.concat(retLst)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 212, in concat
+    copy=copy)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/reshape/concat.py", line 263, in __init__
+    raise ValueError('All objects passed were None')
+ValueError: All objects passed were None
+[2017-12-20 22:03:23 +0000] [7924] [INFO] Starting gunicorn 19.7.1
+[2017-12-20 22:03:23 +0000] [7924] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:03:23 +0000] [7924] [ERROR] Retrying in 1 second.
+[2017-12-20 22:03:24 +0000] [7924] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:03:24 +0000] [7924] [ERROR] Retrying in 1 second.
+[2017-12-20 22:03:25 +0000] [7924] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:03:25 +0000] [7924] [ERROR] Retrying in 1 second.
+[2017-12-20 22:03:26 +0000] [7924] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:03:26 +0000] [7924] [ERROR] Retrying in 1 second.
+[2017-12-20 22:03:27 +0000] [7924] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:03:27 +0000] [7924] [ERROR] Retrying in 1 second.
+[2017-12-20 22:03:28 +0000] [7924] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2017-12-20 22:07:40 +0000] [7972] [INFO] Starting gunicorn 19.7.1
+[2017-12-20 22:07:40 +0000] [7972] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:07:40 +0000] [7972] [ERROR] Retrying in 1 second.
+[2017-12-20 22:07:41 +0000] [7972] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:07:41 +0000] [7972] [ERROR] Retrying in 1 second.
+[2017-12-20 22:07:42 +0000] [7972] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:07:42 +0000] [7972] [ERROR] Retrying in 1 second.
+[2017-12-20 22:07:43 +0000] [7972] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:07:43 +0000] [7972] [ERROR] Retrying in 1 second.
+[2017-12-20 22:07:44 +0000] [7972] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2017-12-20 22:07:44 +0000] [7972] [ERROR] Retrying in 1 second.
+[2017-12-20 22:07:45 +0000] [7972] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2017-12-21 09:07:59 +0000] [8948] [INFO] Starting gunicorn 19.7.1
+[2017-12-21 09:07:59 +0000] [8948] [INFO] Listening at: http://0.0.0.0:5000 (8948)
+[2017-12-21 09:07:59 +0000] [8948] [INFO] Using worker: sync
+[2017-12-21 09:07:59 +0000] [8951] [INFO] Booting worker with pid: 8951
+[2017-12-21 09:08:59 +0000] [8948] [CRITICAL] WORKER TIMEOUT (pid:8951)
+[2017-12-21 09:08:59 +0000] [8951] [INFO] Worker exiting (pid: 8951)
+[2017-12-21 09:08:59 +0000] [9019] [INFO] Booting worker with pid: 9019
+[2017-12-21 09:54:42 +0000] [8948] [INFO] Handling signal: int
+[2017-12-21 09:54:42 +0000] [9019] [INFO] Worker exiting (pid: 9019)
+[2017-12-21 09:54:42 +0000] [8948] [INFO] Shutting down: Master
+[2017-12-21 10:24:41 +0000] [9458] [INFO] Starting gunicorn 19.7.1
+[2017-12-21 10:24:41 +0000] [9458] [INFO] Listening at: http://0.0.0.0:5000 (9458)
+[2017-12-21 10:24:41 +0000] [9458] [INFO] Using worker: sync
+[2017-12-21 10:24:41 +0000] [9461] [INFO] Booting worker with pid: 9461
+[2017-12-21 10:30:50 +0000] [9458] [CRITICAL] WORKER TIMEOUT (pid:9461)
+[2017-12-21 10:30:50 +0000] [9461] [INFO] Worker exiting (pid: 9461)
+[2017-12-21 10:30:51 +0000] [9633] [INFO] Booting worker with pid: 9633
+[2017-12-21 11:01:53 +0000] [9458] [CRITICAL] WORKER TIMEOUT (pid:9633)
+[2017-12-21 11:01:54 +0000] [9725] [INFO] Booting worker with pid: 9725
+[2017-12-21 11:59:32 +0000] [9725] [INFO] Worker exiting (pid: 9725)
+[2017-12-21 11:59:32 +0000] [9458] [INFO] Handling signal: term
+[2017-12-21 11:59:33 +0000] [9458] [INFO] Shutting down: Master
+[2017-12-21 11:59:52 +0000] [10080] [INFO] Starting gunicorn 19.7.1
+[2017-12-21 11:59:52 +0000] [10080] [INFO] Listening at: http://0.0.0.0:5000 (10080)
+[2017-12-21 11:59:52 +0000] [10080] [INFO] Using worker: sync
+[2017-12-21 11:59:52 +0000] [10083] [INFO] Booting worker with pid: 10083
+[2017-12-21 16:17:07,058] ERROR in app: Exception on /getterm [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 166, in get_term
+    return render_template('mp.html', dataframe=dff.to_html(index=False), res=dffres.to_html(index=False))
+UnboundLocalError: local variable 'dff' referenced before assignment
+[2017-12-22 18:45:04,105] ERROR in app: Exception on /getscore [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 335, in get_score
+    return render_template('tabs.html', dataframe=dfeat.to_html(index=False) , res=dfres.to_html(index=False), twit=dftwit.to_html(index=False), ent=df.to_html(index=False), des=df2.to_html(index=False))
+UnboundLocalError: local variable 'dfeat' referenced before assignment
+[2017-12-24 08:24:33 +0000] [10083] [INFO] Worker exiting (pid: 10083)
+[2017-12-24 08:24:33 +0000] [10080] [INFO] Handling signal: term
+[2017-12-24 08:24:34 +0000] [10080] [INFO] Shutting down: Master
+[2017-12-24 08:30:07 +0000] [16227] [INFO] Starting gunicorn 19.7.1
+[2017-12-24 08:30:07 +0000] [16227] [INFO] Listening at: http://0.0.0.0:5000 (16227)
+[2017-12-24 08:30:07 +0000] [16227] [INFO] Using worker: sync
+[2017-12-24 08:30:07 +0000] [16274] [INFO] Booting worker with pid: 16274
+[2017-12-24 08:31:10 +0000] [16227] [CRITICAL] WORKER TIMEOUT (pid:16274)
+[2017-12-24 08:31:11 +0000] [16448] [INFO] Booting worker with pid: 16448
+[2017-12-24 08:42:42 +0000] [16448] [INFO] Worker exiting (pid: 16448)
+[2017-12-24 08:42:42 +0000] [16227] [INFO] Handling signal: term
+[2017-12-24 08:42:43 +0000] [16227] [INFO] Shutting down: Master
+[2017-12-24 08:48:22 +0000] [16672] [INFO] Starting gunicorn 19.7.1
+[2017-12-24 08:48:22 +0000] [16672] [INFO] Listening at: http://0.0.0.0:5000 (16672)
+[2017-12-24 08:48:22 +0000] [16672] [INFO] Using worker: sync
+[2017-12-24 08:48:22 +0000] [16727] [INFO] Booting worker with pid: 16727
+[2017-12-24 08:49:18,714] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 301, in get_term
+    dff = dff[dff.wordcount != 'err']
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/ops.py", line 879, in wrapper
+    res = na_op(values, other)
+  File "/usr/local/lib/python3.6/site-packages/pandas/core/ops.py", line 818, in na_op
+    raise TypeError("invalid type comparison")
+TypeError: invalid type comparison
+[2017-12-24 08:53:30 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:16727)
+[2017-12-24 08:53:31 +0000] [17167] [INFO] Booting worker with pid: 17167
+[2017-12-24 08:54:40 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:17167)
+[2017-12-24 08:54:41 +0000] [17276] [INFO] Booting worker with pid: 17276
+[2017-12-24 09:03:32 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:17276)
+[2017-12-24 09:03:33 +0000] [17547] [INFO] Booting worker with pid: 17547
+[2017-12-24 09:04:54 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:17547)
+[2017-12-24 09:04:55 +0000] [17657] [INFO] Booting worker with pid: 17657
+[2017-12-24 14:26:30 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:17657)
+[2017-12-24 14:26:31 +0000] [18199] [INFO] Booting worker with pid: 18199
+[2017-12-24 14:27:13 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18199)
+[2017-12-24 14:27:14 +0000] [18307] [INFO] Booting worker with pid: 18307
+[2017-12-24 14:28:34 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18307)
+[2017-12-24 14:28:35 +0000] [18418] [INFO] Booting worker with pid: 18418
+[2017-12-24 14:29:11 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18418)
+[2017-12-24 14:29:12 +0000] [18526] [INFO] Booting worker with pid: 18526
+[2017-12-24 14:30:14 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18526)
+[2017-12-24 14:30:15 +0000] [18709] [INFO] Booting worker with pid: 18709
+[2017-12-24 14:30:54 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18709)
+[2017-12-24 14:30:55 +0000] [18817] [INFO] Booting worker with pid: 18817
+[2017-12-24 14:31:35 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18817)
+[2017-12-24 14:31:36 +0000] [18925] [INFO] Booting worker with pid: 18925
+[2017-12-24 14:34:53 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:18925)
+[2017-12-24 14:34:54 +0000] [19051] [INFO] Booting worker with pid: 19051
+[2017-12-24 18:16:12 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:19051)
+[2017-12-24 18:16:13 +0000] [19669] [INFO] Booting worker with pid: 19669
+[2017-12-25 07:01:16 +0000] [16672] [CRITICAL] WORKER TIMEOUT (pid:19669)
+[2017-12-25 07:01:17 +0000] [20603] [INFO] Booting worker with pid: 20603
+[2017-12-25 07:10:46 +0000] [16672] [INFO] Handling signal: term
+[2017-12-25 07:10:46 +0000] [20603] [INFO] Worker exiting (pid: 20603)
+[2017-12-25 07:10:46 +0000] [16672] [INFO] Shutting down: Master
+[2017-12-25 07:13:17 +0000] [20825] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 07:13:17 +0000] [20825] [INFO] Listening at: http://0.0.0.0:5000 (20825)
+[2017-12-25 07:13:17 +0000] [20825] [INFO] Using worker: sync
+[2017-12-25 07:13:17 +0000] [20869] [INFO] Booting worker with pid: 20869
+[2017-12-25 07:14:43 +0000] [20825] [CRITICAL] WORKER TIMEOUT (pid:20869)
+[2017-12-25 07:14:44 +0000] [21053] [INFO] Booting worker with pid: 21053
+[2017-12-25 07:23:01 +0000] [20825] [CRITICAL] WORKER TIMEOUT (pid:21053)
+[2017-12-25 07:23:02 +0000] [21323] [INFO] Booting worker with pid: 21323
+[2017-12-25 07:24:21 +0000] [20825] [INFO] Handling signal: term
+[2017-12-25 07:24:21 +0000] [21323] [INFO] Worker exiting (pid: 21323)
+[2017-12-25 07:24:21 +0000] [20825] [INFO] Shutting down: Master
+[2017-12-25 07:35:29 +0000] [246] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 07:35:29 +0000] [246] [INFO] Listening at: http://0.0.0.0:5000 (246)
+[2017-12-25 07:35:29 +0000] [246] [INFO] Using worker: sync
+[2017-12-25 07:35:29 +0000] [343] [INFO] Booting worker with pid: 343
+[2017-12-25 07:37:08 +0000] [246] [CRITICAL] WORKER TIMEOUT (pid:343)
+[2017-12-25 07:37:09 +0000] [475] [INFO] Booting worker with pid: 475
+[2017-12-25 07:38:11 +0000] [246] [INFO] Handling signal: term
+[2017-12-25 07:38:11 +0000] [475] [INFO] Worker exiting (pid: 475)
+[2017-12-25 07:38:12 +0000] [246] [INFO] Shutting down: Master
+[2017-12-25 07:39:49 +0000] [244] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 07:39:49 +0000] [244] [INFO] Listening at: http://0.0.0.0:5000 (244)
+[2017-12-25 07:39:49 +0000] [244] [INFO] Using worker: sync
+[2017-12-25 07:39:49 +0000] [385] [INFO] Booting worker with pid: 385
+[2017-12-25 07:44:17 +0000] [244] [INFO] Handling signal: term
+[2017-12-25 07:44:17 +0000] [385] [INFO] Worker exiting (pid: 385)
+[2017-12-25 07:44:18 +0000] [244] [INFO] Shutting down: Master
+[2017-12-25 08:26:13 +0000] [244] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 08:26:13 +0000] [244] [INFO] Listening at: http://0.0.0.0:5000 (244)
+[2017-12-25 08:26:13 +0000] [244] [INFO] Using worker: sync
+[2017-12-25 08:26:13 +0000] [341] [INFO] Booting worker with pid: 341
+[2017-12-25 08:28:27 +0000] [244] [CRITICAL] WORKER TIMEOUT (pid:341)
+[2017-12-25 08:28:28 +0000] [449] [INFO] Booting worker with pid: 449
+[2017-12-25 08:28:48,148] ERROR in app: Exception on /getterm [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/qupid/atest/app.py", line 324, in get_term
+    for url in mg.search_url(query=search):
+  File "/usr/local/lib/python3.6/site-packages/MagicGoogle-0.2.7-py3.6.egg/MagicGoogle/magic_google.py", line 101, in search_url
+    pq_content = self.pq_html(content)
+  File "/usr/local/lib/python3.6/site-packages/MagicGoogle-0.2.7-py3.6.egg/MagicGoogle/magic_google.py", line 140, in pq_html
+    return pq(content)
+  File "/usr/local/lib/python3.6/site-packages/pyquery/pyquery.py", line 254, in __init__
+    elements = fromstring(context, self.parser)
+  File "/usr/local/lib/python3.6/site-packages/pyquery/pyquery.py", line 94, in fromstring
+    result = getattr(etree, meth)(context)
+  File "src/lxml/etree.pyx", line 3230, in lxml.etree.fromstring (src/lxml/etree.c:81070)
+  File "src/lxml/parser.pxi", line 1866, in lxml.etree._parseMemoryDocument (src/lxml/etree.c:121191)
+ValueError: Unicode strings with encoding declaration are not supported. Please use bytes input or XML fragments without declaration.
+[2017-12-25 08:36:22 +0000] [244] [CRITICAL] WORKER TIMEOUT (pid:449)
+[2017-12-25 08:36:23 +0000] [731] [INFO] Booting worker with pid: 731
+[2018-01-10 19:16:53 +0000] [928] [INFO] Starting gunicorn 19.7.1
+[2018-01-10 19:16:53 +0000] [928] [INFO] Listening at: http://0.0.0.0:5000 (928)
+[2018-01-10 19:16:53 +0000] [928] [INFO] Using worker: sync
+[2018-01-10 19:16:53 +0000] [945] [INFO] Booting worker with pid: 945
+[2018-01-10 19:23:06,353] ERROR in app: Exception on /getdetail [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+[2018-01-10 19:23:11,982] ERROR in app: Exception on /getdetail [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+[2018-01-10 19:23:14,524] ERROR in app: Exception on /getdetail [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+[2018-01-16 09:26:14 +0000] [9408] [INFO] Starting gunicorn 19.7.1
+[2018-01-16 09:26:14 +0000] [9408] [INFO] Listening at: http://0.0.0.0:5000 (9408)
+[2018-01-16 09:26:14 +0000] [9408] [INFO] Using worker: sync
+[2018-01-16 09:26:14 +0000] [9425] [INFO] Booting worker with pid: 9425
