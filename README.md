@@ -34,6 +34,6 @@ In our other reposotry you will find out how we configured the tool and some sug
 
 We blocked the open ports with our internal Firewall.
 
-### Questions or Feedback
-Mail me:
-ozkansener@gmail.com
+Questions: ozkansener@gmail.com
+
+Vrije Universiteit Amsterdam
